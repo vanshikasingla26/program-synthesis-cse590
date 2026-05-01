@@ -1,0 +1,18 @@
+{
+  "ablation_1_feedback": {
+    "finding": "Failure feedback improves LLM success rate on hard benchmarks",
+    "mechanism": "LLM can target specific failures rather than guessing randomly",
+    "connection_to_lilo": "LILO's auto-documentation serves a similar role - making feedback interpretable"
+  },
+  "ablation_2_temperature": {
+    "finding": "Temperature 0.7 optimal for program synthesis",
+    "too_low": "Temperature 0.1 gets stuck in local optima",
+    "too_high": "Temperature 1.0 produces too many syntactically invalid programs"
+  },
+  "ablation_3_difficulty": {
+    "finding": "All synthesizers solve simple benchmarks; hard benchmarks reveal capability gaps",
+    "enumerative_bottleneck": "Search depth limit (max_depth=4)",
+    "llm_bottleneck": "Reasoning about complex nested expressions",
+    "gemini_specific": "Systematic failure on conditional arithmetic suggests grammar comprehension issues"
+  }
+}
